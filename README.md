@@ -14,7 +14,7 @@ Check the website: [Trun](https://trun-ch2.vercel.app)
 ### Getting Started:
 
 1. **Clone:**
-   git clone https://github.com/your-username/nike-mockup.git
+   git clone [this link](https://github.com/MargeryOlethea/Trun-Ecommerce)
 2. **Install Dependencies:** 
    npm install
 3. **Run Locally:**
