@@ -2,6 +2,8 @@
 
 This is my learning project to build interactive web experiences with Next.js and TypeScript. This project is focusing on front-end routing, component interaction, and user authentication.
 
+Check the website: [Trun](https://trun-ch2.vercel.app)
+
 ### Features:
 
 - **Interactive Wishlist:** Add and remove items from your wishlist on the fly.
