@@ -2,8 +2,6 @@
 
 A full-stack ecommerce prototype built with the Next.js App Router, TypeScript, MongoDB, and Tailwind CSS.
 
-**Live demo:** [trun-ch2.vercel.app](https://trun-ch2.vercel.app)
-
 > [!NOTE]
 > This is an independent educational project. It is not affiliated with, endorsed by, or operated by Nike. Product names and imagery are used only to demonstrate an ecommerce interface.
 
