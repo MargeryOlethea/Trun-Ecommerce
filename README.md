@@ -64,4 +64,4 @@ npm run build
 
 ## Project status
 
-This repository is a portfolio prototype rather than a production store. It does not process real orders or payments.
+I built Trun on my own, interface and API. It is a prototype: it does not process real orders or payments.
