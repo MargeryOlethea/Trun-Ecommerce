@@ -21,19 +21,29 @@ export const middleware = async (request: NextRequest) => {
 
     // AUTHORIZATION
 
-    const { payload }: { payload: UserLoginPayload } = await verifyToken(
-      token?.value || "",
-    );
+    try {
+      const { payload }: { payload: UserLoginPayload } = await verifyToken(
+        token.value,
+      );
 
-    const requestHeaders = new Headers(request.headers);
+      const requestHeaders = new Headers(request.headers);
 
-    if (payload) {
-      requestHeaders.set("x-user-id", payload.userId.toString());
-      requestHeaders.set("x-user-username", payload.username);
+      if (payload) {
+        requestHeaders.set("x-user-id", payload.userId.toString());
+        requestHeaders.set("x-user-username", payload.username);
 
-      return NextResponse.next({
-        headers: requestHeaders,
-      });
+        return NextResponse.next({
+          headers: requestHeaders,
+        });
+      }
+    } catch {
+      return NextResponse.json(
+        {
+          status: 401,
+          error: "Invalid authentication token",
+        },
+        { status: 401 },
+      );
     }
   }
 

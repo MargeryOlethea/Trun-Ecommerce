@@ -57,7 +57,7 @@ export async function handleLogin(formData: FormData) {
   if (token) {
     cookies().set("token", token, {
       httpOnly: true,
-      secure: false,
+      secure: process.env.NODE_ENV === "production",
       expires: new Date(Date.now() + 1000 * 60 * 60 * 2),
       sameSite: "strict",
     });
