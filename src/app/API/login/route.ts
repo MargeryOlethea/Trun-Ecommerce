@@ -20,7 +20,7 @@ export const POST = async (request: NextRequest) => {
     const token = await login(parsedData.data);
 
     return NextResponse.json<FetchResponse<string>>({
-      status: 201,
+      status: 200,
       message: `Successfully login`,
       data: token,
     });
